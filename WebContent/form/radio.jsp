@@ -14,5 +14,6 @@
 	게임 <input type= "checkbox" name="hobby">,
 	먹기 <input type= "checkbox" name="hobby">,
 	여행 <input type= "checkbox" name="hobby">
+	<button> 보내기 </button>
 </body>
 </html>

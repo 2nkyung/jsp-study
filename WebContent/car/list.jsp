@@ -14,12 +14,10 @@
 		String carName = request.getParameter("ci_name");
 		String carYear = request.getParameter("ci_year");
 		if (carName != null && !"".equals(carName)) {
-	%>
-	검색한 차 이름 :
-	<%=carName%><br> 
-	검색한 차 연식 :
-	<%=carYear%><br>
-	<%
+%>
+		검색한 차 이름 : <%=carName%><br>
+		검색한 차 연식 : <%=carYear%><br>
+<%
 		}
 	%>
 	<form>

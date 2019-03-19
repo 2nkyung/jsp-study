@@ -41,6 +41,11 @@ public class UserServiceImpl implements UserService {
 		return udao.deleteUser(user);
 	}
 
+	@Override
+	public Map<String, String> login(String uiId) {
+		return udao.selectUserById(uiId);
+	}
+	
 	public static void main(String[]args) {
 		UserService us = new UserServiceImpl();
 		System.out.println(us.selectUserList(null));
@@ -55,4 +60,6 @@ public class UserServiceImpl implements UserService {
 		
 		
 	}
+
+	
 }
